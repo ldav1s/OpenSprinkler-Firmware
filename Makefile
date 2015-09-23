@@ -2,11 +2,13 @@ ARDUINO_VERS = 106
 OFLAG = -Os
 
 SKETCHBOOK = .
-ARDUINO_DIR = /home/xxx/arduino-1.0.6
-BOARD_TAG = os20
+ARDUINO_DIR = /usr/share/arduino-1.0.6
+BOARDS_TXT = ./hardware/boards.txt
+BOARD_TAG = os21
 ARDUINO = $(ARDUINO_DIR)
 AVR_TOOLS = $(ARDUINO_DIR)/hardware/tools/avr
 PATH += $(ARDUINO)/hardware/tools/avr/bin
 MONITOR_PORT = /dev/ttyUSB0
+ISP_PROG = avrispmkii
 
 include $(SKETCHBOOK)/Arduino.mk
