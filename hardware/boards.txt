@@ -42,6 +42,26 @@ os22.build.variant=standard
 
 ############################################################
 
+os21isp.name=OpenSprinklerHW2.1 (12MHz, USBasp, orange terminal) ISP
+
+os21isp.upload.using=arduino:avrispmkii
+os21isp.upload.maximum_size=65536
+
+os21isp.bootloader.low_fuses=0xFF
+os21isp.bootloader.high_fuses=0xDC
+os21isp.bootloader.extended_fuses=0xFD
+os21isp.bootloader.path=atmega
+os21isp.bootloader.file=ATmegaBOOT_168_atmega644.hex
+os21isp.bootloader.unlock_bits=0x3F
+os21isp.bootloader.lock_bits=0x0F
+
+os21isp.build.mcu=atmega644p
+os21isp.build.f_cpu=12000000L
+os21isp.build.core=arduino
+os21isp.build.variant=standard
+
+############################################################
+
 os21.name=OpenSprinklerHW2.1 (12MHz, USBasp, orange terminal)
 
 os21.upload.using=arduino:usbasp
